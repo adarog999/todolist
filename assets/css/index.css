@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&family=Merriweather&family=Poppins&family=Titan+One&family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url("../image/bg.jpg");
+    background-size: cover;
+}
+.header {
+    width: 100%;
+    z-index: 2;
+}
+.header h1 {
+    border: 1px solid black;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    background-color: #010C22;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid black;
+    padding: 20px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #010C22;
+    color: #fff;
+    box-shadow: 0px 0px 60px rgb(133,153,191.7);
+}
+.container form {
+    height:max-content;
+}
+.container form button {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+.container form .inputs {
+    display: grid; 
+    grid-template-columns: auto 150px;
+    grid-gap: 10px;
+}
+.container form .inputs input {
+    height: 40px;
+    font-size: 17px;
+    padding-left: 10px;
+}
+.container form .inputs input[type="text"] {
+    letter-spacing: 1.5px;
+    outline: none;
+}
+.container .taskList {
+    height: calc(100% - 90px);
+    overflow: scroll;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    display: none;
+  }
+  
+  
+.container .taskList .wrapper input[type="checkbox"] {
+    accent-color: green;
+    height: 20px;
+    width: 20px;
+}
+.taskList .wrapper {
+    display: grid;
+    grid-template-columns: 50px auto 100px;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+}
+.taskList .wrapper h2 {
+    letter-spacing: 1px;
+}
+.done {
+    text-decoration: line-through;
+}
+.disabled {
+    pointer-events: none;
+}
